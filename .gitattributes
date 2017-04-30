@@ -1,6 +1,5 @@
 # Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto
-* text eol=crlf
 
 # Explicitly declare text files you want to always be normalized and converted
 # to native line endings on checkout.
@@ -13,3 +12,5 @@
 # Denote all files that are truly binary and should not be modified.
 *.png binary
 *.jpg binary
+
+find ./ -type f -exec dos2unix {} \;
